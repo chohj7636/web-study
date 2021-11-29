@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <style>
+        a {
+            color: black;
+        }
+
+        h1 a {
+            color: burlywood;
+        }
+
+
+        #grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+
+        h1 {
+            border-bottom: black 1px solid;
+            color: burlywood;
+            text-align: center;
+            font-size: 50px;
+            /* padding: 20px; */
+            margin: 0;
+        }
+
+        ol {
+            border-right: 1px solid black;
+            width: 150px;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid ol {
+            padding-left: 33px;
+        }
+
+        #article {
+            padding-left: 25px;
+        }
+
+        /* screen width < 800px */
+        @media(max-width: 800px) {
+            #grid {
+                display: block;
+            }
+
+            ol {
+                border-right: none;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <a href="index.html">
+            TEST
+        </a>
+    </h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1_html.html">HTML</a></li>
+            <li><a href="2_css.html">CSS</a></li>
+            <li><a href="3_js.html">JavaScript</a></li>
+            <li><a href="4_test.html">test</a></li>
+        </ol>
+        <div id="article">
+            <h2>JavaScript</h2>
+            <p>
+                Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u>
+                    pages</strong>and web applications.Web browsers receive HTML documents from a web server or from
+                local storage and
+                render them into multimedia web pages. HTML describes the structure of a web page semantically and
+                originally
+                includedcues for the appearance of the document.
+            </p>
+            <p style="margin-top:45px;">
+                HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+                other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to
+                create
+                structured documents by denoting structural semantics for text such as headings, paragraphs, lists,
+                links,
+                quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
